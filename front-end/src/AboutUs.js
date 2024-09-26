@@ -40,7 +40,7 @@ const AboutUs = props => {
       <h1 style={{ marginBottom: '20px' }}>{abtInfo ? abtInfo.title : 'Sorry this is taking a while.'}</h1>
       <p style={{ marginBottom: '16px', textAlign: 'left' }}>{abtInfo ? abtInfo.description : 'Please wait, loading some cool stuff about me :)'}</p>
       <p style={{ marginBottom: '20px', textAlign: 'left' }}>{abtInfo ? abtInfo.description2 : 'Please wait, loading some more cool stuff about me :)'}</p>
-      <img src={abtInfo ? abtInfo.imageURL : '#'} alt="About Us" style={{ display: 'block', marginTop: '20px', marginLeft: 'auto', marginRight: 'auto' }} className="about-img" />
+      <img src={abtInfo ? abtInfo.imageUrl : '#'} alt="About Us" style={{ display: 'block', marginTop: '20px', marginLeft: 'auto', marginRight: 'auto' }} className="about-img" />
     </div>
   );
   
