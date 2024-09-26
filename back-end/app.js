@@ -22,6 +22,14 @@ mongoose
 const { Message } = require('./models/Message')
 const { User } = require('./models/User')
 
+app.get('/about-us', (req,res)=>{
+  res.json({
+    title: "About Us",
+    description: "Hi, I'm Aditi Kanaujia 👋! I'm a senior at NYU majoring in Computer Science with a minor in Web Programming and Applications. My passion lies in product design and management, particularly within industries like music, data, cleantech, e-commerce, software, and AI. After spending last semester studying abroad and traveling across Europe, I'm now back in NYC, actively learning and growing in my passions, hobbies, and career. Aside from professional interests, I love to travel, try new things, and pick up random hobbies. Some fun(ish) facts about me include scuba diving in Jamaica and the Mediterranean Sea 🤿, being a huge tennis and F1 nerd 🏎️, having traveled to 12 countries 🛫, and enjoying crocheting, listening to music, and playing video games 🎮.",
+    imageUrl:"https://drive.google.com/uc?export=view&id=1z_foqYXBsjvc_Za83XLNvNmkE-mwbn30"
+  });
+});
+
 // a route to handle fetching all messages
 app.get('/messages', async (req, res) => {
   // load all messages from database
